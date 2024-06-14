@@ -15,7 +15,12 @@ public class PlayerController : MonoBehaviour
     {
         // TODO: Vector3.forward == 0, 0, 1 (3 points)
         //transform.Translate(0, 0, 1);
-        transform.Translate(Vector3.forward);
+        //transform.Translate(Vector3.forward);
 
+    }
+
+    void FixedUpdate()
+    {
+        transform.Translate(Vector3.forward);
     }
 }
