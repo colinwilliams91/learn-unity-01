@@ -15,13 +15,13 @@ public class PlayerController : MonoBehaviour
     {
         // TODO: Vector3.forward == 0, 0, 1 (3 points)
         //transform.Translate(0, 0, 1);
-        Debug.Log(Time.deltaTime);
-        transform.Translate(Vector3.forward * Time.deltaTime);
+        //transform.Translate(Vector3.forward * Time.deltaTime * 20);
 
     }
 
     void FixedUpdate()
     {
         //transform.Translate(Vector3.forward);
+        transform.Translate(Vector3.forward * Time.deltaTime * 20);
     }
 }
