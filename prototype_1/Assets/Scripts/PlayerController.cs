@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
 {
     [RequiredMember]
     public float speed = 15f;
+    [RequiredMember]
+    public float turnSpeed = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -27,5 +29,6 @@ public class PlayerController : MonoBehaviour
     {
         //transform.Translate(Vector3.forward);
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
+        transform.Translate(Vector3.right *  Time.deltaTime * turnSpeed);
     }
 }
