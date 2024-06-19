@@ -6,9 +6,9 @@ using UnityEngine.Scripting;
 public class PlayerController : MonoBehaviour
 {
     [RequiredMember]
-    public float speed = 15f;
+    public float speed = 15.0f;
     [RequiredMember]
-    public float turnSpeed = 1f;
+    public float turnSpeed = 50.0f;
     [RequiredMember]
     public float horizontalInput;
     [RequiredMember]
