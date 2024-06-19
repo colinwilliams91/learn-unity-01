@@ -13,8 +13,8 @@ public class FollowPlayer : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+    // LateUpdate will ensure consistency of movement order: vehicle moves THEN camera moves (reduces stuttering)
+    void LateUpdate()
     {
         transform.position = player.transform.position + cameraOffset;
     }
