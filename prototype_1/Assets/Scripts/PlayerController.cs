@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Scripting;
 
 public class PlayerController : MonoBehaviour
 {
+    [RequiredMember]
+    public float speed = 15f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +26,6 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         //transform.Translate(Vector3.forward);
-        transform.Translate(Vector3.forward * Time.deltaTime * 20);
+        transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
 }

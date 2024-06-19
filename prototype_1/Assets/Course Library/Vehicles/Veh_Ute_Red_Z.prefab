@@ -438,6 +438,7 @@ GameObject:
   - component: {fileID: 3313442307395238052}
   - component: {fileID: 5537925010159884243}
   - component: {fileID: 4294614638764001495}
+  - component: {fileID: 7126989504302529080}
   m_Layer: 0
   m_Name: Veh_Ute_Red_Z
   m_TagString: Untagged
@@ -549,6 +550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363609cd26518884d9731873b4dd2257, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 15
 --- !u!54 &4294614638764001495
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -576,6 +578,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7126989504302529080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363609cd26518884d9731873b4dd2257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 15
 --- !u!1 &2801325797856607763
 GameObject:
   m_ObjectHideFlags: 0
