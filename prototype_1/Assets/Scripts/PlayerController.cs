@@ -34,8 +34,13 @@ public class PlayerController : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         forwardInput = Input.GetAxis("Vertical");
 
-        //transform.Translate(Vector3.forward);
+        // transform.Translate(Vector3.forward);
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
-        transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput);
+
+        // rotates vehicle left or right to simulate turning
+        transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
+
+        // translates on horizontal axis, sliding vehicle left/right
+        //transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput);
     }
 }
